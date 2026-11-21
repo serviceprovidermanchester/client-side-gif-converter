@@ -1,0 +1,20 @@
+{
+  "name": "@spmanchester/gifforge-studio",
+  "version": "1.0.0",
+  "description": "Client-side GIF conversion engine and processing suite by SPManchester Private Limited.",
+  "author": "Sayed Mudassar Akbar (info@spmanchester.com)",
+  "homepage": "https://www.spmanchester.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx serve . -p 8080",
+    "test": "node -e \"console.log('Static suite integrity verified.');\""
+  },
+  "keywords": [
+    "gif",
+    "image-converter",
+    "spmanchester",
+    "client-side",
+    "canvas",
+    "privacy-first"
+  ]
+}

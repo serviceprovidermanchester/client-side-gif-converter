@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIFForge Studio™ — Client-Side GIF Processing Suite | SPManchester</title>
+  <meta name="description" content="Enterprise client-side GIF converter suite by SPManchester Private Limited. Fast, secure, and private browser-based conversions with zero server uploads.">
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card-bg: #1e293b;
+      --card-hover: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent: #818cf8;
+      --border: #334155;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem 1.5rem;
+    }
+    header {
+      max-width: 1000px;
+      margin: 0 auto 3rem auto;
+      text-align: center;
+    }
+    .brand-tag {
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .badge-bar {
+      margin-top: 1.25rem;
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 9999px;
+      font-size: 0.825rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+    .grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 0.875rem;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease;
+    }
+    .card:hover {
+      background: var(--card-hover);
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 30px -8px rgba(0, 0, 0, 0.4);
+    }
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 0.625rem;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+    footer {
+      max-width: 1000px;
+      margin: 4rem auto 0 auto;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+      width: 100%;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .footer-author {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand-tag">SPManchester Private Limited Presents</div>
+    <h1>GIFForge Studio™</h1>
+    <p>High-performance client-side GIF conversion suite. All image processing executes strictly on your device with zero server uploads.</p>
+    <div class="badge-bar">
+      <span class="badge">🔒 100% Client-Side Privacy</span>
+      <span class="badge">⚡ Zero-Dependency Vanilla Engine</span>
+      <span class="badge">📦 Batch Processing & ZIP Export</span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <a href="gif-to-png/index.html" class="card">
+      <div class="card-icon">PNG</div>
+      <h2>GIF to PNG</h2>
+      <p>High-quality raster PNG export with full alpha transparency preservation.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+
+    <a href="gif-to-jpg/index.html" class="card">
+      <div class="card-icon">JPG</div>
+      <h2>GIF to JPG</h2>
+      <p>Customizable JPEG lossy compression with interactive quality slider.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+
+    <a href="gif-to-webp/index.html" class="card">
+      <div class="card-icon">WEBP</div>
+      <h2>GIF to WebP</h2>
+      <p>Modern ultra-efficient web graphics format with superior compression.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+
+    <a href="gif-to-ico/index.html" class="card">
+      <div class="card-icon">ICO</div>
+      <h2>GIF to ICO</h2>
+      <p>Standard 256×256 icon container for website favicons and application icons.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+
+    <a href="gif-to-svg/index.html" class="card">
+      <div class="card-icon">SVG</div>
+      <h2>GIF to SVG</h2>
+      <p>Embeds raster GIF frame data inside a clean, scalable vector XML wrapper.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+
+    <a href="gif-to-pdf/index.html" class="card">
+      <div class="card-icon">PDF</div>
+      <h2>GIF to PDF</h2>
+      <p>Auto-centers and packages GIF frames into standard single-page A4 PDF documents.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+
+    <a href="gif-to-bmp/index.html" class="card">
+      <div class="card-icon">BMP</div>
+      <h2>GIF to BMP</h2>
+      <p>Pure client-side binary serializer producing 24-bit uncompressed Bitmaps.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+
+    <a href="gif-to-base64/index.html" class="card">
+      <div class="card-icon">B64</div>
+      <h2>GIF to Base64</h2>
+      <p>Generate data URI text representations for direct HTML and CSS embedding.</p>
+      <span class="card-link">Launch Converter &rarr;</span>
+    </a>
+  </main>
+
+  <footer>
+    <p>Engineered & Maintained by <a href="https://www.spmanchester.com" target="_blank" rel="noopener">SPManchester Private Limited</a> &bull; <a href="mailto:info@spmanchester.com">info@spmanchester.com</a></p>
+    <p class="footer-author">Lead Architect: <strong>Sayed Mudassar Akbar</strong> &bull; MIT Licensed Open Source</p>
+  </footer>
+</body>
+</html>

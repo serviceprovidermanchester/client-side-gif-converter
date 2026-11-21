@@ -1,0 +1,7 @@
+services:
+  gifforge-suite:
+    build: .
+    container_name: spmanchester-gifforge
+    ports:
+      - "3000:80"
+    restart: unless-stopped
